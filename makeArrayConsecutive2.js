@@ -1,3 +1,5 @@
+// The minimal number of statues that need to be added to existing statues such that it contains every integer size from an interval [L, R] (for some L, R) and no other sizes.
+
 const makeArrayConsecutive2 = statues => {
   let additionalStatues = 0;
   const sorted = statues.sort((a, b) => a - b);
@@ -8,5 +10,3 @@ const makeArrayConsecutive2 = statues => {
   });
   return additionalStatues;
 };
-
-console.log(makeArrayConsecutive2([2, 4, 7, 18]));
